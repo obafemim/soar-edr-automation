@@ -62,13 +62,13 @@ The architecture of this system involves the following components:
    The **LaZagne** executable is downloaded and run on the endpoint.  
    LimaCharlie monitors the activity and detects the execution.
 
-   ![LaZagne Execution](images/lazagne-execution.png)
+   ![LaZagne Execution](images/Screenshot%202024-09-22%20143651.png)
 
 2. **Step 2: LimaCharlie Detection**  
    Upon execution of LaZagne, **LimaCharlie** triggers an alert.  
    The alert is forwarded to **Tines**.
 
-   ![LimaCharlie Detection](images/limacharlie-detection.png)
+   ![LimaCharlie Detection](images/Screenshot%202024-09-22%20180129.png)
 
 3. **Step 3: Tines User Prompt**  
    Tines receives the alert and triggers a workflow.  
@@ -76,20 +76,20 @@ The architecture of this system involves the following components:
    - **Isolate the machine**.  
    - **Allow the machine** to continue.
 
-   ![Tines User Prompt](images/tines-user-prompt.png)
+   ![Tines User Prompt](images/Screenshot%202024-09-22%20201224.png)
 
 4. **Step 4: User Decision**  
    Based on the user's decision:
    - **Isolation**: The machine is isolated from the network using LimaCharlie’s endpoint isolation feature.
    - **Allow access**: No further action is taken, and the machine remains connected.
 
-   ![User Decision](images/user-decision.png)
+   ![User Decision](images/Screenshot%202024-09-22%20172900.png)
 
 5. **Step 5: Final Action**  
    The system either isolates the machine or allows continued access based on the decision.  
    The final logs and alerts are recorded.
 
-   ![Final Action - Logs](images/final-action.png)
+   ![Final Action - Logs](images/Screenshot%202024-09-22%20180458.png)
 
 ---
 
